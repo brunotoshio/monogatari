@@ -54,7 +54,7 @@ Overview
 
 .. end-badges
 
-Tool for handling dictionaries
+Tool for handling dictionaries.
 
 * Free software: MIT license
 

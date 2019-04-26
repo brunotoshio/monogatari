@@ -45,3 +45,6 @@ class DictHandler(object):
                 return self._normal_dict[term]
             else:
                 return []
+    
+    def categories(self):
+        return list(self._categories.values())

@@ -44,3 +44,7 @@ def test_search_found(handler):
 def test_search_not_found(handler):
     assert handler.search('友情') == []
     assert handler.search('守る*') == []
+
+
+def test_categories(handler):
+    assert handler.categories() == ['HarmVirtue', 'HarmVice']
