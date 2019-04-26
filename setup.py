@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='onigiri',
+    name='monogatari',
     version='0.0.0',
     license='MIT license',
     description='Tool for handling dictionaries',
@@ -34,7 +34,7 @@ setup(
     ),
     author='Bruno Toshio Sugano',
     author_email='brunotoshio@gmail.com',
-    url='https://github.com/brunotoshio/onigiri',
+    url='https://github.com/brunotoshio/monogatari',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -53,15 +53,13 @@ setup(
         'Topic :: Utilities',
     ],
     project_urls={
-        'Documentation': 'https://onigiri.readthedocs.io/',
-        'Changelog': 'https://onigiri.readthedocs.io/en/latest/changelog.html',
-        'Issue Tracker': 'https://github.com/brunotoshio/onigiri/issues',
+        'Documentation': 'https://monogatari.readthedocs.io/',
+        'Changelog': 'https://monogatari.readthedocs.io/en/latest/changelog.html',
+        'Issue Tracker': 'https://github.com/brunotoshio/monogatari/issues',
     },
     keywords=[
         # eg: 'keyword1', 'keyword2', 'keyword3',
     ],
     python_requires='~=3.6',
-    install_requires=[
-        
-    ],
+    install_requires=[],
 )

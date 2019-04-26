@@ -9,7 +9,7 @@ class DictHandler(object):
         self._normal_dict = {}
         self._wildcard_dict = {}
         self.__parse()
-    
+
     def __parse(self):
         category_part = False
         with open(self._file_path, 'r') as f:

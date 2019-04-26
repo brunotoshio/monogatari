@@ -1,9 +1,9 @@
-onigiri
+monogatari
 =======
 
 .. testsetup::
 
-    from onigiri import *
+    from monogatari import *
 
-.. automodule:: onigiri
+.. automodule:: monogatari
     :members:

@@ -2,4 +2,4 @@
 Authors
 =======
 
-* Bruno Toshio Sugano - --
+* Bruno Toshio Sugano

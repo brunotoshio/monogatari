@@ -22,7 +22,7 @@ if os.getenv('SPELLCHECK'):
 
 source_suffix = '.rst'
 master_doc = 'index'
-project = 'Onigiri'
+project = 'Monogatari'
 year = '2019'
 author = 'Bruno Toshio Sugano'
 copyright = '{0}, {1}'.format(year, author)
@@ -31,8 +31,8 @@ version = release = '0.0.0'
 pygments_style = 'trac'
 templates_path = ['.']
 extlinks = {
-    'issue': ('https://github.com/brunotoshio/onigiri/issues/%s', '#'),
-    'pr': ('https://github.com/brunotoshio/onigiri/pull/%s', 'PR #'),
+    'issue': ('https://github.com/brunotoshio/monogatari/issues/%s', '#'),
+    'pr': ('https://github.com/brunotoshio/monogatari/pull/%s', 'PR #'),
 }
 # on_rtd is whether we are on readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'

@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use Onigiri in a project::
+To use monogatari in a project::
 
-	import onigiri
+	import monogatari

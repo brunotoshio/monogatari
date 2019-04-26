@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 # Copyright 2019 Bruno Toshio Sugano <brunotoshio@gmail.com>
-import os.path
+import os
+
 import pytest
 
-from onigiri import DictHandler
+from monogatari import DictHandler
 
 
 @pytest.fixture
