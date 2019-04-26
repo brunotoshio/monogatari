@@ -1,3 +1,3 @@
-__version__ = '0.0.2'
+__version__ = '0.0.3'
 from .dict_counter import DictCounter  # NOQA
 from .dict_handler import DictHandler  # NOQA

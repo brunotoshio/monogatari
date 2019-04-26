@@ -35,9 +35,9 @@ Overview
     :alt: PyPI Package latest release
     :target: https://pypi.org/project/monogatari
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/brunotoshio/monogatari/v0.0.2.svg
+.. |commits-since| image:: https://img.shields.io/github/commits-since/brunotoshio/monogatari/v0.0.3.svg
     :alt: Commits since latest release
-    :target: https://github.com/brunotoshio/monogatari/compare/v0.0.2...master
+    :target: https://github.com/brunotoshio/monogatari/compare/v0.0.3...master
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/monogatari.svg
     :alt: PyPI Wheel
