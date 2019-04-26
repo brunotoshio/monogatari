@@ -16,7 +16,7 @@ To use monogatari in a project::
 
 	counter.top_normalized(100)  # List top N categories, ordered by number of words normalized by the total number of words
 
-In this example, we will use J-MFD dictionary (https://github.com/soramame0518/j-mfd/blob/master/J-MFD_2018.dic) as the base for word counting.
+In this example, we are using J-MFD dictionary (https://github.com/soramame0518/j-mfd) as the base for word counting.
 However, we can load a custom dictionary using the class ```DictCounter```.
 
 	from monogatari import DictCounter
@@ -31,3 +31,18 @@ However, we can load a custom dictionary using the class ```DictCounter```.
 
 	counter.top_normalized(100)  # List top N categories, ordered by number of words normalized by the total number of words
 
+----------------------
+Available dictionaries
+----------------------
+
+* MFD (from https://www.moralfoundations.org/)
+
+	from monogatari import MFDCounter
+
+	counter = MFDCounter()
+
+* JMFD (from https://github.com/soramame0518/j-mfd)
+
+	from monogatari import JMFDCounter
+
+	counter = JMFDCounter()
