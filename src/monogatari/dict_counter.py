@@ -33,6 +33,6 @@ class DictCounter(object):
         for key in self._category_counter:
             normalized[key] = self._category_counter[key] / self.number_of_words
         return normalized.most_common(n)
-    
+
     def words_found(self):
         return self._category_words  # NOQA
