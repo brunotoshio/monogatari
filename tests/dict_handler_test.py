@@ -4,7 +4,7 @@ import os
 
 import pytest
 
-from monogatari import DictHandler
+from monogatari.dict_handler import DictHandler
 
 
 @pytest.fixture
