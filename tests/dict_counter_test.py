@@ -20,12 +20,15 @@ def test_reset(counter):
     counter.reset()
     assert counter.number_of_words == 0
     assert all(counter._category_counter[k] == 0 for k in counter._dict.categories())
+    assert all(counter._category_words[k] == [] for k in counter._dict.categories())
 
 
 def test_count(counter):
     counter.count(['守る', '治安', '親善'])
     assert counter._category_counter['HarmVirtue'] == 2
     assert counter._category_counter['HarmVice'] == 1
+    assert counter._category_words['HarmVirtue'] == ['守る', '親善']
+    assert counter._category_words['HarmVice'] == ['親善']
 
 
 def test_top(counter):
