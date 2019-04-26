@@ -12,7 +12,7 @@ class DictHandler(object):
     
     def __parse(self):
         category_part = False
-        with open(self._file_path, 'rb') as f:
+        with open(self._file_path, 'r') as f:
             for line in f:
                 line = line.strip()
                 if len(line) == 0:

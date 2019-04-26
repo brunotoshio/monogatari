@@ -9,7 +9,7 @@ from onigiri import DictHandler
 @pytest.fixture
 def handler():
     test_dir = os.path.dirname(__file__)
-    return DictHandler(f'{test_dir}/testdict.dic')
+    return DictHandler(f'{test_dir}/testdic.dic')
 
 
 def test_parse_categories(handler):
@@ -28,7 +28,7 @@ def test_parse_wildcard_keys(handler):
 
 
 def test_wildcard_search_found(handler):
-    assert handler._wildcard_search('友情*') == ['01', '02']
+    assert handler._wildcard_search('友情*') == ['HarmVirtue', 'HarmVice']
 
 
 def test_wildcard_search_not_found(handler):
@@ -36,8 +36,8 @@ def test_wildcard_search_not_found(handler):
 
 
 def test_search_found(handler):
-    assert handler.search('守る') == ['01']
-    assert handler.search('友情*') == ['01', '02']
+    assert handler.search('守る') == ['HarmVirtue']
+    assert handler.search('友情*') == ['HarmVirtue', 'HarmVice']
 
 
 def test_search_not_found(handler):
