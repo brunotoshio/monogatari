@@ -5,4 +5,6 @@ from monogatari import JMFDCounter
 
 def test_categories():
     handler = JMFDCounter()
-    assert all(key in handler._category_counter for key in ['HarmVirtue', 'HarmVice', 'FairnessVirtue', 'FairnessVice', 'IngroupVirtue', 'IngroupVice', 'AuthorityVirtue', 'AuthorityVice', 'PurityVirtue', 'PurityVice', 'MoralityGeneral'])
+    assert all(key in handler._category_counter for key in [
+        'HarmVirtue', 'HarmVice', 'FairnessVirtue', 'FairnessVice', 'IngroupVirtue',
+        'IngroupVice', 'AuthorityVirtue', 'AuthorityVice', 'PurityVirtue', 'PurityVice', 'MoralityGeneral'])
