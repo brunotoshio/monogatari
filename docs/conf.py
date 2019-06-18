@@ -26,7 +26,7 @@ project = 'Monogatari'
 year = '2019'
 author = 'Bruno Toshio Sugano'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '1.2.0'
+version = release = '1.3.0'
 
 pygments_style = 'trac'
 templates_path = ['.']

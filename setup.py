@@ -25,7 +25,7 @@ def read(*names, **kwargs):
 
 setup(
     name='monogatari',
-    version='1.2.0',
+    version='1.3.0',
     license='MIT license',
     description='Tool for handling dictionaries',
     long_description='%s\n%s' % (
