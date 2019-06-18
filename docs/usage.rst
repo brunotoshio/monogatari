@@ -31,6 +31,23 @@ However, we can load a custom dictionary using the class ```DictCounter```::
 
 	counter.top_normalized(100)  # List top N categories, ordered by number of words normalized by the total number of words
 
+The dictionary file must have the following structure::
+
+	%
+	Category_key_1   Category_value_1
+	Category_key_2   Category_value_2
+	Category_key_3   Category_value_3
+	Category_key_4   Category_value_4
+	%
+
+	Word_key_1     Category_key_1  Category_key_2
+	Word_key_2     Category_key_1  
+	Word_key_3     Category_key_2  
+	Word_key_4     Category_key_1  Category_key_3
+	Word_key_5     Category_key_1  Category_key_2  Category_key_4
+	Word_key_6     Category_key_4
+
+
 ----------------------
 Available dictionaries
 ----------------------

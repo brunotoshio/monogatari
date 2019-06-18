@@ -38,13 +38,10 @@ class DictHandler(object):
         return []
 
     def search(self, term):
-        if term[-1] == '*':
-            return self._wildcard_search(term)
+        if term in self._normal_dict:
+            return self._normal_dict[term]
         else:
-            if term in self._normal_dict:
-                return self._normal_dict[term]
-            else:
-                return []
+            return self._wildcard_search(term)
 
     def categories(self):
         return list(self._categories.values())

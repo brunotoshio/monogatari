@@ -29,21 +29,21 @@ def test_parse_wildcard_keys(handler):
 
 
 def test_wildcard_search_found(handler):
-    assert handler._wildcard_search('友情*') == ['HarmVirtue', 'HarmVice']
+    assert handler._wildcard_search('友情') == ['HarmVirtue', 'HarmVice']
 
 
 def test_wildcard_search_not_found(handler):
-    assert handler._wildcard_search('守る*') == []
+    assert handler._wildcard_search('友') == []
 
 
 def test_search_found(handler):
     assert handler.search('守る') == ['HarmVirtue']
-    assert handler.search('友情*') == ['HarmVirtue', 'HarmVice']
+    assert handler.search('友情') == ['HarmVirtue', 'HarmVice']
 
 
 def test_search_not_found(handler):
-    assert handler.search('友情') == []
-    assert handler.search('守る*') == []
+    assert handler.search('友') == []
+    assert handler.search('守るら') == []
 
 
 def test_categories(handler):

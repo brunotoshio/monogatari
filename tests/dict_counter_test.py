@@ -24,18 +24,18 @@ def test_reset(counter):
 
 
 def test_count(counter):
-    counter.count(['守る', '治安', '親善'])
-    assert counter._category_counter['HarmVirtue'] == 2
+    counter.count(['守る', '治安', '親善', '安全'])
+    assert counter._category_counter['HarmVirtue'] == 3
     assert counter._category_counter['HarmVice'] == 1
-    assert counter._category_words['HarmVirtue'] == ['守る', '親善']
+    assert counter._category_words['HarmVirtue'] == ['守る', '親善', '安全']
     assert counter._category_words['HarmVice'] == ['親善']
 
 
 def test_top(counter):
-    counter.count(['守る', '治安', '親善'])
-    assert counter.top(1000) == [('HarmVirtue', 2), ('HarmVice', 1)]
+    counter.count(['守る', '治安', '親善', '安全'])
+    assert counter.top(1000) == [('HarmVirtue', 3), ('HarmVice', 1)]
 
 
 def test_top_normalized(counter):
-    counter.count(['守る', '治安', '親善', '守る'])
-    assert counter.top_normalized(1000) == [('HarmVirtue', 0.75), ('HarmVice', 0.25)]
+    counter.count(['守る', '治安', '親善', '守る', '安全'])
+    assert counter.top_normalized(1000) == [('HarmVirtue', 0.8), ('HarmVice', 0.2)]
