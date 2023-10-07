@@ -14,24 +14,18 @@ black:
 
 .PHONY: release-patch
 release-patch: test
-	poetry version patch
-	git add pyproject.toml src/monogatari/__init__.py
-	git commit -m "Bump version to $(shell poetry version -s)"
+	poetry run bump2version patch
 	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
 
 .PHONY: release-minor
 release-minor: test
-	poetry version minor
-	git add pyproject.toml src/monogatari/__init__.py
-	git commit -m "Bump version to $(shell poetry version -s)"
+	poetry run bump2version minor
 	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
 
 .PHONY: release-major
 release-major: test
-	poetry version major
-	git add pyproject.toml src/monogatari/__init__.py
-	git commit -m "Bump version to $(shell poetry version -s)"
+	poetry run bump2version major
 	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
