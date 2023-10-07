@@ -8,4 +8,4 @@ from .dict_counter import DictCounter
 class MFDCounter(DictCounter):
     def __init__(self):
         path = os.path.dirname(__file__)
-        super().__init__(f'{path}/data/MFD.dic')
+        super().__init__(f"{path}/data/MFD.dic")

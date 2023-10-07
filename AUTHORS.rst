@@ -1,5 +1,0 @@
-
-Authors
-=======
-
-* Bruno Toshio Sugano

@@ -1,6 +1,8 @@
 %
-01	HarmVirtue		
-02	HarmVice	
+Title
+01  HarmVirtue
+Some other title
+02	HarmVice
 %
 
 守る		01
@@ -8,4 +10,8 @@
 友情*		01		02
 親善		01		02
 損害*		02
-害		02
+害		    02
+Word		01		02
+another 	01
+ano*	02
+kind of 	02
