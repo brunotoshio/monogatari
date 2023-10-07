@@ -15,5 +15,7 @@ black:
 .PHONY: release-patch
 release-patch:
 	poetry version patch
+	git add pyproject.toml src/monogatari/__init__.py
+	git commit -m "Bump version to $(shell poetry version -s)"
 	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
