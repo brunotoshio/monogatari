@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Monogatari"
-version = "2.1.0"
+version = "2.1.1"
 description = "Generates word statistics"
 authors = ["Bruno Toshio Sugano <brunotoshio@gmail.com>"]
 license = "MIT"
