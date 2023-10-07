@@ -15,17 +15,14 @@ black:
 .PHONY: release-patch
 release-patch: test
 	poetry run bump2version patch
-	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
 
 .PHONY: release-minor
 release-minor: test
 	poetry run bump2version minor
-	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
 
 .PHONY: release-major
 release-major: test
 	poetry run bump2version major
-	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
 	git push --follow-tags
