@@ -11,3 +11,9 @@ test:
 .PHONY: black
 black:
 	poetry run black .
+
+.PHONY: release-patch
+release-patch:
+	poetry version patch
+	git tag -a "release-$(shell poetry version -s)" -m "Version $(shell poetry version -s)"
+	git push --follow-tags
